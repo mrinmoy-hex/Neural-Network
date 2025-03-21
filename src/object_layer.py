@@ -9,7 +9,7 @@ X = [[1, 2, 3, 2.5],
     [-1.5, 2.7, 3.3, -0.8]]
 
 # Define a Dense Layer class
-class LayerDense:
+class NeuralNetwork:
     def __init__(self, n_inputs, n_neurons):
         # Initialize weights with small random values (Gaussian distribution)
         # Shape: (n_inputs, n_neurons)
@@ -23,9 +23,9 @@ class LayerDense:
         self.output = np.dot(inputs, self.weights) + self.biases
     
 # Create first layer: 4 input features -> 5 neurons
-layer1 = LayerDense(4, 5)
+layer1 = NeuralNetwork(4, 5)
 # Create second layer: 5 input features (from layer1) -> 2 neurons
-layer2 = LayerDense(5, 2)
+layer2 = NeuralNetwork(5, 2)
 
 # Perform forward pass through first layer
 layer1.forward(X)
