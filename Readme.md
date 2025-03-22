@@ -4,4 +4,4 @@ This is a simple project where I am learning and practicing neural networks. The
 
 >## Notes
 
-This is not a professional project, just a personal learning exercise!
+This is just a personal learning exercise!
